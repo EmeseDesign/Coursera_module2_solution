@@ -1,0 +1,71 @@
+h1 {
+  text-align: center;
+}
+
+.col {
+  float: left;
+  margin: 1%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: #999;
+  position: relative;
+}
+
+.smallbox {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  color:#333;
+  font-weight: bold;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+}
+
+.col p {
+  float: left;
+  margin: 20px 10px 0px 10px;
+  border: 0px;
+  padding: 10px 10px 0px 10px;
+  position: relative;
+}
+
+#firstbox .smallbox {
+  background-color: red;
+}
+
+#secondbox .smallbox {
+  background-color: white;
+  }
+
+#thirdbox .smallbox {
+  background-color: green;
+  color:white;
+}
+
+/*desktop size lg*/
+@media (min-width: 992px) {
+  .col {
+    width: 31.333%;
+  }
+}
+
+/*tablet size md*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col {
+    width: 48%;
+  }
+  #thirdbox {
+    width: 98%;
+  }
+}
+
+/*phone size sm*/
+@media (max-width: 767px) {
+  .col {
+    width: 98%;
+  }
+}
